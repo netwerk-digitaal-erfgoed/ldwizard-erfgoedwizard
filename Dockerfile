@@ -10,7 +10,7 @@ RUN npm ci
 COPY . .
 RUN npm run build --omit=dev
 
-ARG CONFIG_FILE
+ARG CONFIG_FILE=./config.ts
 
 RUN npm exec ldwizard-build ${CONFIG_FILE}
 

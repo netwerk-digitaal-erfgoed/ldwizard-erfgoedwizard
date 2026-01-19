@@ -3,10 +3,8 @@ services:
   ldwizard:
     image: ldwizard/nde:1.0.0
     build:
-      context: ../
-      dockerfile: ./docker/Dockerfile
-      args: 
+      args:
         CONFIG_FILE: ./config.ts
 
     ports:
-      - "4000:80" 
+      - "4000:80"
