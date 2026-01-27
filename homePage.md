@@ -18,4 +18,4 @@ De LDWizard is een initiatief van Nederlandse linked data experts uit verschille
 - [Internationaal Instituut voor Sociale Geschiedenis (IISG)](https://iisg.amsterdam/) and [Clariah](https://www.clariah.nl/), Richard Zijdeman.
 - [Triply](https://triply.cc/), Thomas de Groot, Gerwin Bosch & Wouter Beek.
 
-De open source basissoftware en de eerste LDWizard - gericht op erfgoeddata - is gefinancierd door Netwerk Digitaal Erfgoed. Op basis van deze resultaten kunnen ook LDWizards in andere domeinen worden gemaakt. De code is gepubliceerd op [GitHub](https://github.com/netwerk-digitaal-erfgoed/LDWizard/).
+De open source basissoftware en de eerste LDWizard - gericht op erfgoeddata - is gefinancierd door Netwerk Digitaal Erfgoed. Op basis van deze resultaten kunnen ook LDWizards in andere domeinen worden gemaakt. De code is gepubliceerd op [GitHub](https://github.com/pldn/LDWizard/).

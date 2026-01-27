@@ -5,7 +5,7 @@
   "private": true,
   "license": "TBD",
   "scripts": {
-    "build": "ldwizard-build ./config.ts"
+    "build": "yarn exec ldwizard-build config.ts"
   },
   "repository": {
     "type": "git",
