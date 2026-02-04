@@ -18,7 +18,7 @@ async function initSources() {
 
 const wizardConfig: WizardConfig = {
   appName: "LDWizard - Erfgoed",
-  defaultBaseIri: "https://data.netwerkdigitaalerfgoed.nl/",
+  defaultBaseIri: "https://example.org/",
   primaryColor: "#0a3dfa",
   secondaryColor: "#172a59",
   homepageMarkdown: homePage,
@@ -27,11 +27,13 @@ const wizardConfig: WizardConfig = {
   favIcon: favIcon,
   classConfig: {
     method: "sparql",
-    endpoint: "https://graphdb.dumontierlab.com/repositories/ldwizard-humanities",
+    //endpoint: "https://graphdb.dumontierlab.com/repositories/ldwizard-humanities",
+    endpoint: "https://example.org/sparql/"
   },
   predicateConfig: {
     method: "sparql",
-    endpoint: "https://graphdb.dumontierlab.com/repositories/ldwizard-humanities",
+    //endpoint: "https://graphdb.dumontierlab.com/repositories/ldwizard-humanities",
+    endpoint: "https://example.org/sparql/"
   },
 //  dataplatformLink: "https://data.netwerkdigitaalerfgoed.nl/",
   repositoryLink: "https://github.com/netwerk-digitaal-erfgoed/LDWizard-ErfgoedWizard",
@@ -46,18 +48,6 @@ const wizardConfig: WizardConfig = {
   // },
   getAllowedPrefixes: async () => {
     const prefixes: PrefixEntry[] = [
-      {
-        "prefixLabel": "sio",
-        "iri": "http://semanticscience.org/resource/"
-      },
-      {
-        "prefixLabel": "biolink",
-        "iri": "https://w3id.org/biolink/vocab/"
-      },
-      {
-        "prefixLabel": "bl",
-        "iri": "http://w3id.org/biolink/vocab/"
-      },
       {
         "prefixLabel": "wd",
         "iri": "http://www.wikidata.org/entity/"
@@ -83,32 +73,8 @@ const wizardConfig: WizardConfig = {
         "iri": "http://purl.org/dc/terms/"
       },
       {
-        "prefixLabel": "fn",
-        "iri": "http://www.w3.org/2005/xpath-functions#"
-      },
-      {
         "prefixLabel": "foaf",
         "iri": "http://xmlns.com/foaf/0.1/"
-      },
-      {
-        "prefixLabel": "geo",
-        "iri": "http://www.opengis.net/ont/geosparql#"
-      },
-      {
-        "prefixLabel": "geof",
-        "iri": "http://www.opengis.net/def/function/geosparql/"
-      },
-      {
-        "prefixLabel": "geor",
-        "iri": "http://www.opengis.net/def/rule/geosparql/"
-      },
-      {
-        "prefixLabel": "gml",
-        "iri": "http://www.opengis.net/ont/gml#"
-      },
-      {
-        "prefixLabel": "gr",
-        "iri": "http://purl.org/goodrelations/v1#"
       },
       {
         "prefixLabel": "owl",
@@ -119,20 +85,8 @@ const wizardConfig: WizardConfig = {
         "iri": "http://www.w3.org/ns/prov#"
       },
       {
-        "prefixLabel": "pav",
-        "iri": "http://purl.org/pav/"
-      },
-      {
-        "prefixLabel": "qb",
-        "iri": "http://purl.org/linked-data/cube#"
-      },
-      {
         "prefixLabel": "rdf",
         "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      },
-      {
-        "prefixLabel": "rdfa",
-        "iri": "http://www.w3.org/ns/rdfa#"
       },
       {
         "prefixLabel": "rdfs",
@@ -143,24 +97,16 @@ const wizardConfig: WizardConfig = {
         "iri": "https://schema.org/"
       },
       {
-        "prefixLabel": "sioc",
-        "iri": "http://rdfs.org/sioc/ns#"
+        "prefixLabel": "sdo",
+        "iri": "https://schema.org/"
       },
       {
         "prefixLabel": "skos",
         "iri": "http://www.w3.org/2004/02/skos/core#"
       },
       {
-        "prefixLabel": "sf",
-        "iri": "http://www.opengis.net/ont/sf#"
-      },
-      {
         "prefixLabel": "void",
         "iri": "http://rdfs.org/ns/void#"
-      },
-      {
-        "prefixLabel": "wgs84",
-        "iri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
       },
       {
         "prefixLabel": "xsd",
@@ -172,23 +118,7 @@ const wizardConfig: WizardConfig = {
       },
       {
         "prefixLabel": "bnode",
-        "iri": "https://data.netwerkdigitaalerfgoed.nl/.well-known/genid/"
-      },
-      {
-        "prefixLabel": "bif",
-        "iri": "http://www.openlinksw.com/schemas/bif#"
-      },
-      {
-        "prefixLabel": "pnv",
-        "iri": "https://w3id.org/pnv#"
-      },
-      {
-        "prefixLabel": "graph",
-        "iri": "https://data.netwerkdigitaalerfgoed.nl/ld-wizard/cidoc-crm/graphs/"
-      },
-      {
-        "prefixLabel": "cidoc-crm",
-        "iri": "http://www.cidoc-crm.org/cidoc-crm/"
+        "iri": "https://example.org/.well-known/genid/"
       }
     ]
     return prefixes;
